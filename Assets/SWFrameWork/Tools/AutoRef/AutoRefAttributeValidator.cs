@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
 using UnityEditor;
@@ -57,6 +58,12 @@ namespace SWFrameWork.Tools.AutoRef
                         components = new[] {o.GetComponentInParent(field.FieldType)};
                         break;
                     // 处理其他范围...
+                }
+                
+                // If a filter is specified, use it to filter the components
+                if (attribute.Filter != null && components != null)
+                {
+                    components = Array.FindAll(components, c => attribute.Filter.Check(c));
                 }
 
                 // 如果未指定名字，直接使用第一个找到的组件
