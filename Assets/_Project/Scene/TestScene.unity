@@ -526,7 +526,7 @@ PrefabInstance:
         type: 3}
       propertyPath: button2
       value: 
-      objectReference: {fileID: 8359911234404017820}
+      objectReference: {fileID: 0}
     - target: {fileID: 6511502379583300496, guid: fb2dc5af7923e874f9f2e718226c92c2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -632,18 +632,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb2dc5af7923e874f9f2e718226c92c2, type: 3}
---- !u!114 &8359911234404017820 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6590420412121291984, guid: fb2dc5af7923e874f9f2e718226c92c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 8359911234404017819}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

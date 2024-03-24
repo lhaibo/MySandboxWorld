@@ -46,8 +46,8 @@ namespace SWFrameWork.Tools
                 Refresh();
             }
         }
-        
-        public static void CreateCnFontAsset(string path)
+
+        private static void CreateCnFontAsset(string path)
         {
             // 设置文件保存路径
 
