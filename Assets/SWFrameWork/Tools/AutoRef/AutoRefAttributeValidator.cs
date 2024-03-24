@@ -59,6 +59,13 @@ namespace SWFrameWork.Tools.AutoRef
                     // 处理其他范围...
                 }
 
+                // 如果未指定名字，直接使用第一个找到的组件
+                if (string.IsNullOrEmpty(attribute.Name) && components != null && components.Length > 0)
+                {
+                    field.SetValue(o, components[0]);
+                    continue;
+                }
+
                 // 如果指定了组件名字，确保找到的组件名字匹配
                 if (!string.IsNullOrEmpty(attribute.Name) && components != null)
                 {

@@ -1,8 +1,6 @@
-using System;
-//using KBCore.Refs;
 using SWFrameWork.Tools.AutoRef;
+using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace SandboxWorld.UI
@@ -17,7 +15,9 @@ namespace SandboxWorld.UI
 
         [SerializeField, Child(name: "Button3")]
         private Button button3;
-
+        
+        [SerializeField, Child]
+        private TextMeshProUGUI text;
         private void Start()
         {
             button.onClick.AddListener(OnClick);
