@@ -1,0 +1,141 @@
+# This .gitignore file should be placed at the root of your Unity project directory
+
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ibrary/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# MemoryCaptures can get excessive in size.
+# They also could contain sensitive data.
+[Mm]emoryCaptures/
+
+# Recorded test data from Test Runner
+[Tt]est[Rr]esults/
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# ========================= #
+# Visual Studio / Rider IDE #
+# ========================= #
+.vs/
+.vscode/
+*.user
+*.userprefs
+*.suo
+*.sln.docstates
+*.sln.ide/
+
+# Rider
+.idea/
+
+# User-specific stuff:
+*.rsuser
+*.userosscache
+*.userprefs
+*.unityproj
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# ============ #
+# macOS #
+# ============ #
+*.swp
+*.lock
+*.lock-wscript
+
+# =============== #
+# JetBrains Rider #
+# =============== #
+.idea/
+
+# ============ #
+# Visual Studio #
+# ============ #
+.vs/
+
+# ==================== #
+# Windows & Linux #
+# ==================== #
+*~
+*.swp
+*.lock
+*.lock-wscript
+
+# ============== #
+# Node #
+# ============== #
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ============== #
+# Other #
+# ============== #
+*.log
+*.sql
+*.sqlite
+
+# Excluding specific files or folders
+# /[Ff]olderToExclude/
+# specificfiletoexclude.txt
+
+# ========================================= #
+# Unity-specific Asset Store Assets ignored #
+# ========================================= #
+# Asset Store packages should not be shared in public repositories.
+# Store these assets in a private repository or use Unity Package Manager (UPM)
+# where possible.
+#
+# /[Aa]ssets/[Aa]sset[Ss]toreTools*
+
+# ===================================== #
+# Working with Unity & Git Large File Storage (LFS) #
+# ===================================== #
+# Consider using Git LFS for managing large assets that are not suitable for regular Git version control.
+# This can include images, audio files, video clips, and more.
+# https://git-lfs.github.com/
+#
+# Example Git LFS initialization:
+# git lfs track "*.psd"
+# git lfs track "*.mov"
+# git add .gitattributes
