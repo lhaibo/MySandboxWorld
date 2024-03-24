@@ -2,7 +2,6 @@ using System.IO;
 using System.Text;
 using UnityEditor;
 using UnityEngine;
-
 using static System.IO.Directory;
 using static System.IO.Path;
 using static UnityEditor.AssetDatabase;
@@ -15,14 +14,14 @@ namespace SWFrameWork.Tools
         public static void CreateDefaultFolders()
         {
             Folders.CreateDefault("_Project", "Animation", "Art", "Materials", "Prefabs", "ScriptableObjects",
-                "_Scripts", "Settings", "Scene","Fonts");
+                "_Scripts", "Settings", "Scene", "Fonts");
 
             Refresh();
         }
-        
+
         static class Folders
         {
-            public static void CreateDefault(string root,params string[] folders)
+            public static void CreateDefault(string root, params string[] folders)
             {
                 string fullPath = Combine(Application.dataPath, root);
                 foreach (var folder in folders)
@@ -35,7 +34,7 @@ namespace SWFrameWork.Tools
                 }
             }
         }
-        
+
         [MenuItem("SWFrameWork/Setup/Create Default Fonts Txt")]
         public static void CreateDefaultFont()
         {
@@ -68,9 +67,8 @@ namespace SWFrameWork.Tools
 
             // 将字符集写入文件
             File.WriteAllText(path, sb.ToString(), Encoding.UTF8);
-            
+
             Refresh();
         }
     }
-
 }

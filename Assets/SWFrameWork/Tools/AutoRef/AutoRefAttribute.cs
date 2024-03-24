@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SWFrameWork.Tools.AutoRef
 {
-    public class AutoRefAttribute:PropertyAttribute
+    public class AutoRefAttribute : PropertyAttribute
     {
         public enum SearchScope
         {
@@ -25,7 +25,7 @@ namespace SWFrameWork.Tools.AutoRef
             Name = name;
         }
     }
-    
+
     [AttributeUsage(AttributeTargets.Field)]
     public class ChildAttribute : AutoRefAttribute
     {
@@ -33,7 +33,7 @@ namespace SWFrameWork.Tools.AutoRef
         {
         }
     }
-    
+
     [AttributeUsage(AttributeTargets.Field)]
     public class ParentAttribute : AutoRefAttribute
     {
@@ -41,7 +41,7 @@ namespace SWFrameWork.Tools.AutoRef
         {
         }
     }
-    
+
     [AttributeUsage(AttributeTargets.Field)]
     public class SelfAttribute : AutoRefAttribute
     {
@@ -49,7 +49,7 @@ namespace SWFrameWork.Tools.AutoRef
         {
         }
     }
-    
+
     [AttributeUsage(AttributeTargets.Field)]
     public class AnywhereAttribute : AutoRefAttribute
     {
@@ -57,7 +57,7 @@ namespace SWFrameWork.Tools.AutoRef
         {
         }
     }
-    
+
     [AttributeUsage(AttributeTargets.Field)]
     public class SceneAttribute : AutoRefAttribute
     {

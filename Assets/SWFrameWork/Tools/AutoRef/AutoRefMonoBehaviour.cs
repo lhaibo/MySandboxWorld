@@ -4,7 +4,7 @@ using SWFrameWork.Tools.AutoRef;
 
 namespace SWFrameWork.Tools.AutoRef
 {
-    public class AutoRefMonoBehaviour:MonoBehaviour
+    public class AutoRefMonoBehaviour : MonoBehaviour
     {
 #if UNITY_EDITOR
         protected virtual void OnValidate()
