@@ -46,11 +46,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\AutoRefAttribute.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\ReflectionUtil.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\AutoRefMonoBehaviour.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\Setup.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\AutoRefAttributeValidator.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\ReflectionUtil.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefAttribute.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefMonoBehaviour.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefAttributeValidator.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Editor\Setup.cs" />
     <None Include="Assets\SWFrameWork\SWFrameWork.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
