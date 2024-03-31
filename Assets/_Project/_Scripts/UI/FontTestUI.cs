@@ -5,14 +5,6 @@ using UnityEngine.UI;
 
 namespace SandboxWorld.UI
 {
-    public class ActiveComponentFilter : IComponentFilter
-    {
-        public bool Check(Component component)
-        {
-            return component.gameObject.activeInHierarchy;
-        }
-    }
-    
     public class FontTestUI : AutoRefMonoBehaviour
     {
         [SerializeField, Child(name: "Button")]
