@@ -46,14 +46,19 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\ReflectionUtil.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefAttribute.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefMonoBehaviour.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefAttributeValidator.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\ReflectionUtil.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\EventCenter\PredefinedAssemblyUtil.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Editor\AutoRefEditorHandler.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\EventCenter\Events.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefAttributeValidator.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventCenterUtil.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Setup\Editor\Setup.cs" />
     <Compile Include="Assets\SWFrameWork\Core\Singleton\MonoSingleton.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventBinding.cs" />
     <Compile Include="Assets\SWFrameWork\Core\Singleton\Singleton.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\Runtime\EventCenter\EventCenter.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\Editor\Setup.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefAttribute.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefMonoBehaviour.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventCenter.cs" />
     <None Include="Assets\SWFrameWork\SWFrameWork.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

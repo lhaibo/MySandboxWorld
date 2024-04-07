@@ -22,14 +22,13 @@ namespace SWFrameWork.Tools.AutoRef
 
             AutoRef(component);
         }
-
 #endif
 
         public static void AutoRefComponents(this Component c, bool updateAtRuntime = false)
             => AutoRef(c);
 
 
-        private static void AutoRef(Component o)
+        public static void AutoRef(Component o)
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
@@ -96,7 +95,7 @@ namespace SWFrameWork.Tools.AutoRef
             }
 
             stopwatch.Stop();
-            Debug.Log($"AutoRef took {stopwatch.Elapsed.TotalMilliseconds} milliseconds.");
+            Debug.Log($"{o.name} AutoRef took {stopwatch.Elapsed.TotalMilliseconds} milliseconds.");
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using UnityEngine;
 using SWFrameWork.Tools.AutoRef;
+using UnityEditor;
 
 namespace SWFrameWork.Tools.AutoRef
 {
@@ -9,7 +10,10 @@ namespace SWFrameWork.Tools.AutoRef
 #if UNITY_EDITOR
         protected virtual void OnValidate()
         {
-            this.AutoRefComponents();
+            if (!EditorApplication.isPlaying)
+            {
+                this.AutoRefComponents();
+            }
         }
 #else
         protected virtual void OnValidate() { }
