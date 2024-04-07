@@ -450,9 +450,6 @@
     <Reference Include="DOTween">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenUpgradeManager">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenUpgradeManager.dll</HintPath>
-    </Reference>
     <Reference Include="DOTweenPro">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
