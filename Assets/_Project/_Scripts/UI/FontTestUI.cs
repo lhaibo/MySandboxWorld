@@ -1,3 +1,4 @@
+using System;
 using SWFrameWork.Tools.AutoRef;
 using TMPro;
 using UnityEngine;
@@ -19,10 +20,26 @@ namespace SandboxWorld.UI
         [SerializeField, Child(filterType:typeof(ActiveComponentFilter))]
         private TextMeshProUGUI text;
 
+        
         public int a;
         private void Start()
         {
             button.onClick.AddListener(OnClick);
+        }
+
+        private void OnEnable()
+        {
+
+        }
+
+        void OnDisable()
+        {
+
+        }
+
+        private void Update()
+        {
+            
         }
 
         private void OnClick()
