@@ -139,3 +139,4 @@ yarn-error.log
 # git lfs track "*.psd"
 # git lfs track "*.mov"
 # git add .gitattributes
+export_package/UltimateCleanGUIPack.unitypackage
