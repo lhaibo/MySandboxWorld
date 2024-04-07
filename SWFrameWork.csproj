@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\ReflectionUtil.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\PredefinedAssemblyUtil.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Editor\AutoRefEditorHandler.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\Events.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefAttributeValidator.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventCenterUtil.cs" />
@@ -59,6 +58,7 @@
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefAttribute.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefMonoBehaviour.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventCenter.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Extension\TransformExtention.cs" />
     <None Include="Assets\SWFrameWork\SWFrameWork.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
+using SWFrameWork.Tools.Extension;
 using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
+using Object = UnityEngine.Object;
 
 namespace SWFrameWork.Tools.AutoRef
 {
@@ -55,6 +57,12 @@ namespace SWFrameWork.Tools.AutoRef
                         break;
                     case AutoRefAttribute.SearchScope.Parent:
                         components = new[] {o.GetComponentInParent(field.FieldType)};
+                        break;
+                    case AutoRefAttribute.SearchScope.Anywhere:
+                        components = GameObject.FindObjectsByType(field.FieldType,FindObjectsSortMode.None) as Component[];
+                        break;
+                    case AutoRefAttribute.SearchScope.Siblings:
+                        components = o.GetSiblingComponents(field.FieldType);
                         break;
                     // 处理其他范围...
                 }
