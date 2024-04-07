@@ -50,6 +50,9 @@
     <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefAttribute.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefMonoBehaviour.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\Runtime\AutoRef\AutoRefAttributeValidator.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\Singleton\MonoSingleton.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\Singleton\Singleton.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Runtime\EventCenter\EventCenter.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\Editor\Setup.cs" />
     <None Include="Assets\SWFrameWork\SWFrameWork.asmdef" />
     <Reference Include="UnityEngine">
