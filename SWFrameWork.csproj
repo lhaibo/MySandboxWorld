@@ -48,11 +48,12 @@
   <ItemGroup>
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\ReflectionUtil.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\PredefinedAssemblyUtil.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\SmartBuild\BuildTools.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\Events.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefAttributeValidator.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventCenterUtil.cs" />
-    <Compile Include="Assets\SWFrameWork\Tools\Setup\Editor\Setup.cs" />
     <Compile Include="Assets\SWFrameWork\Core\Singleton\MonoSingleton.cs" />
+    <Compile Include="Assets\SWFrameWork\Tools\Setup\Editor\Setup.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventBinding.cs" />
     <Compile Include="Assets\SWFrameWork\Core\Singleton\Singleton.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefAttribute.cs" />
@@ -411,8 +412,14 @@
     <Reference Include="UnityEditor.LinuxStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="DemiEditor">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Reflection.Editor">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.collections@1.4.0\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
@@ -423,11 +430,29 @@
     <Reference Include="unityplastic">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenProEditor">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
@@ -435,53 +460,29 @@
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities.Editor">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="DemiEditor">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenPro">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-    </Reference>
-    <Reference Include="DemiLib">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenProEditor">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Reflection.Editor">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Utilities.Editor">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Utilities">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -864,11 +865,11 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>G:\UnityProject\Project_Dream\MySandboxWorld\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,8 @@
 	"name": "DOTweenPro.EditorScripts",
 	"references": [
 		"DOTween.Modules",
-		"DOTweenPro.Scripts"
+		"DOTweenPro.Scripts",
+		"UnityEngine.UI"
 	],
 	"includePlatforms": [
 		"Editor"

@@ -1,6 +1,6 @@
 {
     "name": "Sirenix.OdinInspector.Modules.UnityMathematics",
-    "references": [ "Unity.Mathematics", "Sirenix.OdinInspector.Attributes", "Sirenix.OdinInspector.Editor", "Sirenix.Utilities", "Sirenix.Utilities.Editor" ],
+    "references": [ "Unity.Mathematics", "Sirenix.OdinInspector.Attributes", "Sirenix.OdinInspector.Editor", "Sirenix.Utilities", "Sirenix.Utilities.Editor", "UnityEngine.UI" ],
     "includePlatforms": [ "Editor" ],
     "excludePlatforms": [],
     "allowUnsafeCode": true,

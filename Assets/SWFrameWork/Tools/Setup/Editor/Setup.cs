@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.IO;
 using System.Text;
 using UnityEditor;
@@ -14,7 +15,7 @@ namespace SWFrameWork.Tools
         public static void CreateDefaultFolders()
         {
             Folders.CreateDefault("_Project", "Animation", "Art", "Materials", "Prefabs", "ScriptableObjects",
-                "_Scripts", "Settings", "Scene", "Fonts");
+                "_Scripts", "Settings", "Scenes", "Fonts");
 
             Refresh();
         }
@@ -72,3 +73,4 @@ namespace SWFrameWork.Tools
         }
     }
 }
+#endif

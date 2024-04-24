@@ -33,6 +33,7 @@ namespace SandboxWorld.UI
         private void OnEnable()
         {
             _testEventBinding = new EventBinding<TestEvents>(OnTestEventWithArgs);
+            
             EventCenter<TestEvents>.Register(_testEventBinding);            
             
             _testEventBinding2 = new EventBinding<TestEvents2>(OnTestEvent);
