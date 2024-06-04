@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using UnityEngine;
-using SWFrameWork.Tools.AutoRef;
+﻿using UnityEngine;
 using UnityEditor;
 
 namespace SWFrameWork.Tools.AutoRef

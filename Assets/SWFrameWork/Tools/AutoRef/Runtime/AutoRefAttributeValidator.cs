@@ -6,7 +6,6 @@ using SWFrameWork.Tools.Extension;
 using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
-using Object = UnityEngine.Object;
 
 namespace SWFrameWork.Tools.AutoRef
 {
