@@ -44,6 +44,12 @@ namespace SWFrameWork.Tools.AutoRef
             {
                 var attribute = attributedField.Attribute;
                 var field = attributedField.FieldInfo;
+                
+                if (!field.FieldType.IsSubclassOf(typeof(Component)))
+                {
+                    Debug.LogError($"AutoRef failed: fieldType:{field.FieldType} variable:<color=red> \"{field.Name}\" </color> is not a Component,will ignore this variable!");
+                    continue;
+                }
 
                 Component[] components = null;
 

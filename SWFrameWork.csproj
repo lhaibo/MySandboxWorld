@@ -47,8 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\ReflectionUtil.cs" />
-    <Compile Include="Assets\SWFrameWork\Core\EventCenter\PredefinedAssemblyUtil.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\SmartBuild\BuildTools.cs" />
+    <Compile Include="Assets\SWFrameWork\Core\EventCenter\PredefinedAssemblyUtil.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\Events.cs" />
     <Compile Include="Assets\SWFrameWork\Tools\AutoRef\Runtime\AutoRefAttributeValidator.cs" />
     <Compile Include="Assets\SWFrameWork\Core\EventCenter\EventCenterUtil.cs" />

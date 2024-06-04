@@ -19,7 +19,8 @@ namespace SandboxWorld.UI
         
         [SerializeField, Child(filterType:typeof(ActiveComponentFilter))]
         private TextMeshProUGUI text;
-
+        // 错误使用Self，因为GameObject不是一个Component
+        [Self()]private GameObject go;
         
         public int a;
         private EventBinding<TestEvents> _testEventBinding;
