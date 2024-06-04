@@ -20,7 +20,7 @@ namespace SandboxWorld.UI
         [SerializeField, Child(filterType:typeof(ActiveComponentFilter))]
         private TextMeshProUGUI text;
         // 错误使用Self，因为GameObject不是一个Component
-        [Self()]private GameObject go;
+        //[Self()]private GameObject go;
         
         public int a;
         private EventBinding<TestEvents> _testEventBinding;
@@ -29,6 +29,10 @@ namespace SandboxWorld.UI
         private void Start()
         {
             button.onClick.AddListener(OnClick);
+            button3.onClick.AddListener(()=>
+            {
+                Application.Quit(0);
+            });
         }
 
         private void OnEnable()

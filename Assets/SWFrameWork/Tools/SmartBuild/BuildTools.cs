@@ -54,21 +54,21 @@ namespace SWFrameWork.Tools.Build
         [ToggleLeft]
         public bool ShowBuiltPlayer;
         
-        [BoxGroup("BuildOptionsGroup/Options")]
-        [ToggleLeft]
-        public bool BuildAdditionalStreamedScenes;
-        
-        [BoxGroup("BuildOptionsGroup/Options")]
-        [ToggleLeft]
-        public bool AcceptExternalModificationsToPlayer;
-        
-        [BoxGroup("BuildOptionsGroup/Options")]
-        [ToggleLeft]
-        public bool InstallInBuildFolder;
-        
-        [BoxGroup("BuildOptionsGroup/Options")]
-        [ToggleLeft]
-        public bool ForceEnableAssertions;
+        // [BoxGroup("BuildOptionsGroup/Options")]
+        // [ToggleLeft]
+        // public bool BuildAdditionalStreamedScenes;
+        //
+        // [BoxGroup("BuildOptionsGroup/Options")]
+        // [ToggleLeft]
+        // public bool AcceptExternalModificationsToPlayer;
+        //
+        // [BoxGroup("BuildOptionsGroup/Options")]
+        // [ToggleLeft]
+        // public bool InstallInBuildFolder;
+        //
+        // [BoxGroup("BuildOptionsGroup/Options")]
+        // [ToggleLeft]
+        // public bool ForceEnableAssertions;
         
         [BoxGroup("BuildOptionsGroup/Options")]
         [ToggleLeft]
@@ -93,8 +93,12 @@ namespace SWFrameWork.Tools.Build
             {
                 scenePaths[i] = AssetDatabase.GetAssetPath(scenes[i]);
             }
-            
-            BuildOptions options = BuildOptions.None;
+
+            BuildOptions options = (Development ? BuildOptions.Development : BuildOptions.None)
+                                   | (AutoRunPlayer ? BuildOptions.AutoRunPlayer : BuildOptions.None)
+                                   | (ShowBuiltPlayer ? BuildOptions.ShowBuiltPlayer : BuildOptions.None)
+                                   | (CompressWithLz4 ? BuildOptions.CompressWithLz4 : BuildOptions.None) 
+                                   | (StrictMode ? BuildOptions.StrictMode : BuildOptions.None);
             BuildPipeline.BuildPlayer(scenePaths, outputPath, buildTarget, options);
         }
 

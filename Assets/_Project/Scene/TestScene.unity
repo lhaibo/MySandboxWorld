@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 370016679}
   - component: {fileID: 370016678}
   - component: {fileID: 370016677}
+  - component: {fileID: 370016680}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -217,6 +218,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370016680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370016676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &814136720
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +559,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 108161609330362040, guid: fb2dc5af7923e874f9f2e718226c92c2,
         type: 3}
+      propertyPath: a
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 108161609330362040, guid: fb2dc5af7923e874f9f2e718226c92c2,
+        type: 3}
       propertyPath: text
       value: 
       objectReference: {fileID: 8359911234404017820}
@@ -526,6 +576,38 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982057658542986509, guid: fb2dc5af7923e874f9f2e718226c92c2,
+        type: 3}
+      propertyPath: m_text
+      value: "\u9000\u51FA"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982057658542986509, guid: fb2dc5af7923e874f9f2e718226c92c2,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982057658542986509, guid: fb2dc5af7923e874f9f2e718226c92c2,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 590f2c333b2fb9244a5a532852529d4f,
+        type: 2}
+    - target: {fileID: 5982057658542986509, guid: fb2dc5af7923e874f9f2e718226c92c2,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982057658542986509, guid: fb2dc5af7923e874f9f2e718226c92c2,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 147095135960943782, guid: 590f2c333b2fb9244a5a532852529d4f,
+        type: 2}
+    - target: {fileID: 5982057658542986509, guid: fb2dc5af7923e874f9f2e718226c92c2,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6479207073299709376, guid: fb2dc5af7923e874f9f2e718226c92c2,
         type: 3}
